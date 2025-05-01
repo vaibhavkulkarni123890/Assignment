@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: video-progress-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://user1:12vaibhav34890@mycluster.9py9n05.mongodb.net/video-progress
+      - key: PORT
+        value: 10000
