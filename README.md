@@ -1,54 +1,44 @@
 # Video Progress Tracker 🎥⏱️  
-*A MERN stack app that remembers your video progress*
+*A MERN stack app that remembers where you left off in videos*
 
-![Demo GIF](https://github.com/vaibhavkulkarni123890/video-progress-tracker/blob/main/screenshots/demo.gif?raw=true)
-
-## 🌟 Features  
-- **Resume playback** from last watched position  
-- **Progress tracking** with visual percentage  
-- **Watched intervals** saved per user  
-- **Responsive** video player (supports YouTube/MP4)  
+![Frontend Interface](https://github.com/vaibhavkulkarni123890/video-progress-tracker/blob/main/screenshots/frontend.png?raw=true)  
+*Screenshot: Clean photo interface with progress tracking*
 
 ---
 
-## 🖥️ Screenshots  
+## 🌟 Key Features  
+- **Smart Resume**: Automatically continues from last watched position  
+- **Visual Progress**: Percentage bar and watched intervals  
+- **Cross-Platform**: Works on desktop and mobile  
+- **Database Backed**: Saves all progress to MongoDB  
 
-| ![Home Screen](https://github.com/vaibhavkulkarni123890/video-progress-tracker/blob/main/screenshots/home.png?raw=true) | ![Progress Tracking](https://github.com/vaibhavkulkarni123890/video-progress-tracker/blob/main/screenshots/progress.png?raw=true) |
-|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| *Clean video interface*                                                                                                  | *Real-time progress tracking*                                                                                                   |
+![Database Structure](https://github.com/vaibhavkulkarni123890/video-progress-tracker/blob/main/screenshots/database.png?raw=true)  
+*Screenshot: MongoDB Atlas storing user progress data*
 
 ---
 
 ## 🛠️ Tech Stack  
-**Frontend**: React, React Player, Axios  
-**Backend**: Node.js, Express  
-**Database**: MongoDB Atlas  
+| Component       | Technology |
+|-----------------|------------|
+| **Frontend**    | React, React Player, Axios |
+| **Backend**     | Node.js, Express |
+| **Database**    | MongoDB Atlas |
+| **Hosting**     | Firebase (Frontend) |
 
 ---
 
-👉 **Live Demo**: [Frontend on Firebase](https://video-progress-tracker-e82ac.web.app)  
+## 🚀 Try It Out  
+🔗 [Live Frontend Demo](https://video-progress-tracker-e82ac.web.app)  
 
-## 🚀 Quick Start (Local Setup)
-
-### 1. Clone & Install
+**Local Setup**:  
 ```bash
+# 1. Clone repo
 git clone https://github.com/vaibhavkulkarni123890/video-progress-tracker.git
-cd video-progress-tracker/Assignment
-2. Frontend Setup
-bash
-cd client
-npm install
-npm start  # Runs on http://localhost:3000
-3. Backend Setup (Not hosted yet)
-bash
+
+# 2. Start frontend
+cd video-progress-tracker/Assignment/client
+npm install && npm start
+
+# 3. Start backend (requires MongoDB URI)
 cd ../server
-npm install
-Create .env file:
-
-env
-MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/video-progress?retryWrites=true&w=majority
-PORT=5000
-Start backend:
-
-bash
-npm run dev  # Runs on http://localhost:5000
+npm install && npm run dev
