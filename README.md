@@ -1,5 +1,5 @@
 # Video Progress Tracker 🎥⏱️  
-*A MERN stack app that remembers where you left off in videos*
+*A MERN stack app that fulfills all the requirements of assignment*
 
 ![Frontend Interface](https://github.com/vaibhavkulkarni123890/video-progress-tracker/blob/main/screenshots/frontend.png?raw=true)  
 *Screenshot: Clean photo interface with progress tracking*
