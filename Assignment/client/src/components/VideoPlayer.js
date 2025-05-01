@@ -14,7 +14,7 @@ const VideoPlayer = ({ userId, videoId, videoUrl, videoLength }) => {
 
   const api = axios.create({
     baseURL: process.env.NODE_ENV === 'production' 
-      ? 'mongodb+srv://user1:12vaibhav34890@mycluster.9py9n05.mongodb.net/' 
+      ? 'mongodb+srv://user1:12vaibhav34890@mycluster.9py9n05.mongodb.net/video-progess-tracker' 
       : 'http://localhost:5000'
   });
 
